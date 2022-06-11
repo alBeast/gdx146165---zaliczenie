@@ -1,11 +1,11 @@
 import React from "react";
 
 const Task = (props) => {
-    const {message, date} = props.task
+    const {message, date, id} = props.task
     return (
         <p><span><b>{message} </b></span>wykonaj do: <span>{date} </span>
-        <button>Oznacz jako wykonane</button>
-        <button>Usuń zadanie</button>
+        <button onClick={() => props.change(id)}>Oznacz jako wykonane</button>
+        <button onClick={() => props.delete(id)}>Usuń zadanie</button>
         </p>
     )
 }

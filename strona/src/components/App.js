@@ -32,12 +32,19 @@ class App extends Component {
     ]
   }
 
-  deleteTask = () => {
-    console.log('usunieto');
+  deleteTask = (id) => {
+    // console.log(`usunieto zadanie o id: ${id}`);
+    let tasks = [...this.state.tasks] //kopia tablicy
+    // console.log(tasks);
+    tasks = tasks.filter(task => task.id !== id) //zmiana zawartości tablicy
+    this.setState({
+      tasks
+    })
+    //setState - aktualizacja state
   }
 
-  changeActiveTask = () => {
-    console.log('przeniesiono zadanie do wykonanych');
+  changeActiveTask = (id) => {
+    console.log(`przeniesiono zadanie o id: ${id}`);
   }
 
 
@@ -45,7 +52,7 @@ class App extends Component {
     return(
       <div className='App'>
         <AddTask />
-        <TaskList tasks={this.state.tasks}/>
+        <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeActiveTask}/>
 
       </div>
     )
