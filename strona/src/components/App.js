@@ -10,21 +10,21 @@ class App extends Component {
     tasks : [
       {
         id : 0,
-        message: 'zamówić wakacje',
+        message: 'dokończyć przycisk dodaj',
         date: '2022-06-30',
         important: true,
         active: true,
       },
       {
         id : 1,
-        message: 'kupić prezent na urodziny',
+        message: 'zadania które zostały wykonane powinny zostać przenoszone niżej',
         date: '2022-06-30',
         important: true,
         active: true,
       },
       {
         id : 2,
-        message: 'skosić trawę',
+        message: 'dodać jakieś css do reacta',
         date: '2022-06-30',
         important: false,
         active: true,

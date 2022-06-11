@@ -16,7 +16,7 @@ class AddTask extends Component {
                     <label htmlFor='important'>Oznacz jako priorytet</label><br />
                     <label htmlFor='date'>Do kiedy wykonać: </label>
                     <input type='date' min='2022-06-11' max='2022-12-31'/> <br/>
-                    <button>Dodaj nowe zadanie</button>
+                    <button>Dodaj</button>
                 </div>
             </div>
         )
