@@ -31,6 +31,16 @@ class App extends Component {
       }
     ]
   }
+
+  deleteTask = () => {
+    console.log('usunieto');
+  }
+
+  changeActiveTask = () => {
+    console.log('przeniesiono zadanie do wykonanych');
+  }
+
+
   render() {
     return(
       <div className='App'>
