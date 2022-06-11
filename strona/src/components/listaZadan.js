@@ -10,6 +10,7 @@ const TaskList = (props) => {
             </div>
             <div className="doneTasks">
                 <h3>Zadania wykonane:</h3>
+                
             </div>
         </div>
     )

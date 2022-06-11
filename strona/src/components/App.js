@@ -44,7 +44,16 @@ class App extends Component {
   }
 
   changeActiveTask = (id) => {
-    console.log(`przeniesiono zadanie o id: ${id}`);
+    // console.log(`przeniesiono zadanie o id: ${id}`);
+    let tasks = [...this.state.tasks]
+    tasks.forEach(task => {
+      if (task.id == id) {
+        task.active = false
+      }
+    })
+    this.setState({
+      tasks
+    })
   }
 
 
