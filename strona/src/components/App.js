@@ -1,12 +1,15 @@
 //import logo from './logo.svg';
 import { Component } from 'react';
 import './App.css';
+import AddTask from './dodajZadanie';
+import TaskList from './listaZadan';
 
 class App extends Component {
   render() {
     return(
       <div className='App'>
-        <p>Poprawiony komponent App</p>
+        <AddTask />
+        <TaskList />
 
       </div>
     )
