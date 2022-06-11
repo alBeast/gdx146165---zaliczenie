@@ -6,12 +6,13 @@ class AddTask extends Component {
         checked: false
 
     }
+    
     render() {
         return (
             <div>
                 <h2>Dodaj nowe zadanie</h2>
                 <div className ='form'>
-                    <input type ='text' placeholder="treść zadania" value={this.state.message}/>
+                    <input type ='text' placeholder="treść zadania" defaultvalue={this.state.message}/>
                     <input type='checkbox' id='important' checked={this.state.checked}/>
                     <label htmlFor='important'>Oznacz jako priorytet</label><br />
                     <label htmlFor='date'>Do kiedy wykonać: </label>
